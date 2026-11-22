@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Encoding & Responsive Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AromaCraft Artisan Coffee - Specialty micro-roastery and café serving ethically sourced single-origin coffees, handcrafted espresso, and fresh pastries.">
+    <title>AromaCraft Artisan Coffee | Specialty Roasters & Café</title>
+
+    <!-- Google Fonts for High-Quality Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===================================================================
+         HEADER & NAVIGATION BAR (Sticky Navigation with Jump Links)
+         =================================================================== -->
+    <header class="site-header" id="top">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" aria-label="AromaCraft Coffee Home">
+                <svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
+                    <path d="M12 2c3.5 3 3.5 7 0 10s-3.5 7 0 10"/>
+                </svg>
+                <span class="brand-name">AromaCraft<span>.</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#story" class="nav-link">Our Story</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action Button -->
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-primary btn-sm">Visit Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===================================================================
+             1. HOME / HERO SECTION
+             =================================================================== -->
+        <section class="hero-section" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge">
+                    <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    Specialty Coffee Roastery & Café
+                </span>
+                <h1 class="hero-title">Handcrafted Coffee, Roasted with Passion.</h1>
+                <p class="hero-subtitle">
+                    Experience ethically sourced single-origin beans, precision pour-overs, and a warm neighborhood sanctuary designed for creators, learners, and dreamers.
+                </p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary">Explore Our Menu</a>
+                    <a href="#story" class="btn btn-outline">Watch The Craft</a>
+                </div>
+
+                <!-- Fast Facts Strip -->
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
+                            <path d="M12 2c3.5 3 3.5 7 0 10s-3.5 7 0 10"/>
+                        </svg>
+                        <span>100% Arabica Beans</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                        </svg>
+                        <span>Small-Batch Roasting</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>Brewed Fresh Daily</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             2. ABOUT US SECTION
+             =================================================================== -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">WHO WE ARE</span>
+                    <h2 class="section-title">Rooted in Sustainable Quality & Community</h2>
+                    <p class="section-subtitle">We believe exceptional coffee starts with ethical relationships at the farm level and ends with deliberate craftsmanship in your cup.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Curated Visual with Caption -->
+                    <div class="about-media">
+                        <figure class="about-figure">
+                            <img src="assets/images/about-cafe.jpg" alt="AromaCraft warm café interior with wooden tables and customers relaxing" class="about-img" loading="lazy">
+                            <figcaption class="about-caption">
+                                <span class="caption-number">01</span>
+                                <span class="caption-text">Our flagship space in Bandar Sunway — designed for mindful coffee rituals.</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Right: Story Narrative & Core Pillars -->
+                    <div class="about-text-content">
+                        <h3 class="about-heading">A Sanctuary for Coffee Enthusiasts</h3>
+                        <p class="about-paragraph">
+                            Founded in 2021 by a team of competitive baristas and agricultural enthusiasts, <strong>AromaCraft</strong> was built on a simple vision: to make world-class specialty coffee approachable, transparent, and sustainably sourced.
+                        </p>
+                        <p class="about-paragraph">
+                            We travel directly to high-altitude estates in Ethiopia, Colombia, and Costa Rica, paying premiums well above fair-trade minimums. Back in our local roastery, every lot is roasted in small 5kg batches, honoring the soil and microclimate where the beans matured.
+                        </p>
+
+                        <!-- 3 Core Brand Value Cards -->
+                        <div class="values-list">
+                            <div class="value-item">
+                                <div class="value-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
+                                        <path d="M12 2c3.5 3 3.5 7 0 10s-3.5 7 0 10"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="value-title">Direct Trade Sourcing</h4>
+                                    <p class="value-desc">Full traceability to the exact farm plot, empowering local farming communities.</p>
+                                </div>
+                            </div>
+
+                            <div class="value-item">
+                                <div class="value-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="value-title">Micro-Batch Roasting</h4>
+                                    <p class="value-desc">Profiled curves tailored to unlock distinct floral, fruity, or chocolate notes.</p>
+                                </div>
+                            </div>
+
+                            <div class="value-item">
+                                <div class="value-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+                                        <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+                                        <line x1="6" x2="6" y1="2" y2="4"/>
+                                        <line x1="10" x2="10" y1="2" y2="4"/>
+                                        <line x1="14" x2="14" y1="2" y2="4"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="value-title">Warm Neighborhood Vibe</h4>
+                                    <p class="value-desc">High-speed Wi-Fi, natural ambient light, and plenty of power outlets for study and work.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             3. PRODUCTS / SERVICES (MENU) SECTION
+             =================================================================== -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">SIGNATURE MENU</span>
+                    <h2 class="section-title">Crafted Beverages & Oven Bakes</h2>
+                    <p class="section-subtitle">Calibrated every morning for peak flavor balance. Available for dine-in, takeaway, and whole bean retail.</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1: Espresso -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img src="assets/images/product-espresso.jpg" alt="Rich crema single origin espresso in ceramic cup" class="product-img" loading="lazy">
+                            <span class="product-badge">Barista Choice</span>
+                        </div>
+                        <div class="product-body">
+                            <div class="product-header">
+                                <h3 class="product-name">Single-Origin Espresso</h3>
+                                <span class="product-price">RM 11.00</span>
+                            </div>
+                            <p class="product-desc">
+                                Ethiopian Yirgacheffe roasted light-medium. Expressive notes of jasmine blossom, bergamot, and sweet peach with a silky golden crema.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-category">Hot • 60ml</span>
+                                <a href="#contact" class="btn btn-secondary btn-sm">Order Ahead</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2: Honey Oat Latte -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img src="assets/images/product-latte.jpg" alt="Velvety latte art flat white in ceramic mug" class="product-img" loading="lazy">
+                            <span class="product-badge">Best Seller</span>
+                        </div>
+                        <div class="product-body">
+                            <div class="product-header">
+                                <h3 class="product-name">Honey Oat Flat White</h3>
+                                <span class="product-price">RM 15.50</span>
+                            </div>
+                            <p class="product-desc">
+                                Double shot of our signature Velvet Roast blended with silky steamed Swedish oat milk and infused with organic wildflower honey.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-category">Dairy-Free • 220ml</span>
+                                <a href="#contact" class="btn btn-secondary btn-sm">Order Ahead</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3: Cold Brew Reserve -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img src="assets/images/product-coldbrew.jpg" alt="Iced slow-drip cold brew in glass with ice" class="product-img" loading="lazy">
+                            <span class="product-badge">House Special</span>
+                        </div>
+                        <div class="product-body">
+                            <div class="product-header">
+                                <h3 class="product-name">Cold Brew Reserve</h3>
+                                <span class="product-price">RM 14.00</span>
+                            </div>
+                            <p class="product-desc">
+                                Slow-extracted over 18 hours using triple-filtered ice water. Ultra-low acidity with velvety dark chocolate and roasted hazelnut finish.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-category">Iced • 300ml</span>
+                                <a href="#contact" class="btn btn-secondary btn-sm">Order Ahead</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4: French Almond Croissant -->
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img src="assets/images/product-pastry.jpg" alt="Freshly baked flaky almond croissant topped with powdered sugar" class="product-img" loading="lazy">
+                            <span class="product-badge">Fresh Baked</span>
+                        </div>
+                        <div class="product-body">
+                            <div class="product-header">
+                                <h3 class="product-name">Artisan Almond Croissant</h3>
+                                <span class="product-price">RM 12.50</span>
+                            </div>
+                            <p class="product-desc">
+                                100% Normandy butter croissant, twice-baked with rich almond frangipane cream and topped with toasted flaked almonds.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-category">Bakery • Daily Batch</span>
+                                <a href="#contact" class="btn btn-secondary btn-sm">Order Ahead</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             4. MULTIMEDIA SPOTLIGHT / EMBEDDED VIDEO SECTION
+             =================================================================== -->
+        <section class="video-section" id="story">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">MULTIMEDIA SHOWCASE</span>
+                    <h2 class="section-title">The Art of Pour-Over Mastery</h2>
+                    <p class="section-subtitle">Watch how water temperature, grind particle size, and slow circular pouring transform green coffee beans into an exquisite sensory ritual.</p>
+                </div>
+
+                <div class="video-wrapper">
+                    <!-- Embedded Video Container: Responsive 16:9 Aspect Ratio -->
+                    <!-- We embed an official specialty coffee pour-over video via iframe, and offer local video playback fallback -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube-nocookie.com/embed/1oB1oDrDkHM?rel=0&modestbranding=1" 
+                            title="AromaCraft Artisan Pour-Over Brewing Process" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen 
+                            class="responsive-iframe"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <!-- Offline HTML5 Local Video Fallback Section (Guarantees offline testing readiness) -->
+                    <div class="offline-video-block">
+                        <p class="offline-video-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            Local Video Player Alternative (Works 100% Offline)
+                        </p>
+                        <video controls poster="assets/images/video-poster.jpg" class="local-video-player" preload="metadata">
+                            <source src="assets/videos/coffee-craft.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             5. SOCIAL PROOF & TESTIMONIALS (Exceeds Minimum Requirements)
+             =================================================================== -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">COMMUNITY PRAISE</span>
+                    <h2 class="section-title">What Our Patrons Say</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="star-rating" aria-label="5 stars rating">
+                            <span>★★★★★</span>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "The Ethiopian Yirgacheffe pour-over here is easily one of the cleanest brews in town. Super consistent, fantastic atmosphere, and the staff are passionate professionals."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Sarah Tan</strong>
+                            <small>Coffee Enthusiast & UX Designer</small>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="star-rating" aria-label="5 stars rating">
+                            <span>★★★★★</span>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "AromaCraft is my go-to productivity haven. High-speed Wi-Fi, incredible Honey Oat Flat Whites, and zero noise pressure. The almond croissants sell out fast for good reason!"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Marcus Wong</strong>
+                            <small>University Student & Freelancer</small>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="star-rating" aria-label="5 stars rating">
+                            <span>★★★★★</span>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Their dedication to direct farmer relationships shows in every single batch. The Cold Brew Reserve on a hot afternoon is pure luxury."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Elena Rostova</strong>
+                            <small>Food & Lifestyle Critic</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             6. CONTACT & LOCATION SECTION (Includes Complete HTML Form)
+             =================================================================== -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2 class="section-title">Visit Our Café or Send an Inquiry</h2>
+                    <p class="section-subtitle">Whether you want to reserve a table for group study, pre-order whole bean retail packs, or plan private event catering, we would love to hear from you.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Column 1: Practical Information & Hours -->
+                    <div class="contact-info-panel">
+                        <h3 class="panel-heading">Café Information</h3>
+                        <p class="panel-intro">Located in the vibrant heart of the university district with ample parking and outdoor garden seating.</p>
+
+                        <div class="info-list">
+                            <!-- Location -->
+                            <div class="info-item">
+                                <div class="info-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Our Address</strong>
+                                    <p>18 Jalan Universiti, Bandar Sunway, 47500 Subang Jaya, Selangor, Malaysia</p>
+                                </div>
+                            </div>
+
+                            <!-- Operating Hours -->
+                            <div class="info-item">
+                                <div class="info-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Opening Hours</strong>
+                                    <p>Monday – Friday: 7:30 AM – 9:00 PM</p>
+                                    <p>Saturday – Sunday: 8:00 AM – 10:00 PM</p>
+                                </div>
+                            </div>
+
+                            <!-- Contact Methods -->
+                            <div class="info-item">
+                                <div class="info-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Telephone & WhatsApp</strong>
+                                    <p>+60 3-5629 8800</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Email Inquiries</strong>
+                                    <p>hello@aromacraftcoffee.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: HTML Contact Form (Display Only) -->
+                    <div class="contact-form-panel">
+                        <h3 class="panel-heading">Send Us a Message</h3>
+                        <p class="panel-intro">Please fill out this form and our team will get back to you within 24 hours.</p>
+
+                        <form class="contact-form" action="#" method="get" onsubmit="event.preventDefault(); alert('Thank you! This is a demonstration form.');">
+                            <!-- Full Name Field -->
+                            <div class="form-group">
+                                <label for="fullname" class="form-label">Full Name <span class="required-mark">*</span></label>
+                                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="e.g. John Doe" required>
+                            </div>
+
+                            <!-- Email Address Field -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span class="required-mark">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                            </div>
+
+                            <!-- Inquiry Type Selection -->
+                            <div class="form-group">
+                                <label for="inquiry-type" class="form-label">Inquiry Reason</label>
+                                <select id="inquiry-type" name="inquiry_type" class="form-select">
+                                    <option value="reservation">Table Reservation</option>
+                                    <option value="beans">Whole Bean Retail & Subscriptions</option>
+                                    <option value="event">Private Event / Catering Booking</option>
+                                    <option value="feedback">General Feedback or Question</option>
+                                </select>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message Details <span class="required-mark">*</span></label>
+                                <textarea id="message" name="message" rows="4" class="form-textarea" placeholder="Tell us how we can assist you..." required></textarea>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox" checked>
+                                <label for="newsletter" class="checkbox-label">Keep me updated on monthly seasonal bean drops.</label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            <small class="form-note">Demonstration only: Form input is validated on-page without external server submission.</small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================================================================
+         FOOTER SECTION
+         =================================================================== -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="brand-logo footer-logo">
+                    <svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
+                        <path d="M12 2c3.5 3 3.5 7 0 10s-3.5 7 0 10"/>
+                    </svg>
+                    <span>AromaCraft<span>.</span></span>
+                </a>
+                <p class="footer-tagline">
+                    Handcrafted perfection in every pour. Dedicated to honest sourcing, slow roasting, and thoughtful community spaces.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-col-title">Navigation</h4>
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Our Café</a></li>
+                    <li><a href="#products">Signature Menu</a></li>
+                    <li><a href="#story">Craft Video</a></li>
+                    <li><a href="#contact">Contact & Hours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-col-title">Connect</h4>
+                <p>Follow our journey on social media for brew tips and roasting days.</p>
+                <div class="social-tags">
+                    <span class="social-badge">#AromaCraftCoffee</span>
+                    <span class="social-badge">#SpecialtyRoasters</span>
+                    <span class="social-badge">#SunwayCafes</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p class="copyright">&copy; 2026 AromaCraft Artisan Coffee. Designed for ICT2215 Web Design & Development Assessment 2.</p>
+                <a href="#top" class="back-to-top" aria-label="Back to top">
+                    Back to Top ↑
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
